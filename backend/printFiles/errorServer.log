@@ -1,0 +1,73 @@
+2023Aug23	12:04:13	 96360f9b-d598-41ae-9b6b-69b477105b35	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /	  https://www.google.co.uk
+2023Aug23	12:04:13	 bdd6e352-849a-4847-89a0-d113319ad108	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  https://www.google.co.uk
+2023Aug23	12:04:35	 211c9d22-d6ef-463b-8f6a-b11b69c19bb7	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /	  https://www.google.co.uk
+2023Aug23	12:04:35	 017af889-68bd-474e-b062-f9eb1458192a	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  https://www.google.co.uk
+2023Aug23	12:09:22	 6d1767c7-f7dd-4336-bfe6-f2735260ee97	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /	  https://www.google.co.uk
+2023Aug23	12:09:22	 aabaecba-500d-465a-8390-c00183336b61	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  https://www.google.co.uk
+2023Aug23	12:09:52	 3a5613a9-73e7-4639-83bb-da4329883666	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  undefined
+2023Aug23	12:09:56	 ab2ff372-09ce-4ee3-8dbf-553afaeb5d2d	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  undefined
+2023Aug23	12:10:02	 b1327d99-d452-4afa-806a-fb01b5aa9615	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /	  https://www.google.co.uk
+2023Aug23	12:10:02	 1092673f-4b6b-44a9-8141-e660cee5a4c8	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  https://www.google.co.uk
+2023Aug23	12:10:37	 147e5cc3-6dc5-4cdc-be75-835a0acc21ac	 Error	 CAN NOT ACCESS TO SERVER	 GET	 /	  undefined
+2023Aug23	18:05:23	 ca06feb5-d27e-4553-9d73-f5a03028626e	 ReferenceError	 path is not defined	 POST	 /upload	  http://localhost:7000
+2023Aug24	17:48:17	 9b81f326-ab49-4fe3-8d9b-8a9ac1afed18	 SyntaxError	 Unexpected token } in JSON at position 176	 POST	 /register	  undefined
+2023Aug24	17:48:35	 f9134323-a727-4cb4-8225-592a1aca3217	 SyntaxError	 Unexpected token } in JSON at position 176	 POST	 /register	  undefined
+2023Aug25	11:05:35	 bce9dd7d-b7f9-4bd4-be19-d9472f00be09	 SyntaxError	 Unexpected token } in JSON at position 68	 GET	 /users/login	  undefined
+2023Aug25	20:18:55	 30ffa54f-2d42-4ad8-8126-b21e9fafc078	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:20:44	 2bccac6f-3e9e-4364-9898-7d6c8a1582f1	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:21:32	 79f71da5-a021-44b7-974a-c1495e8f914b	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:21:33	 bc05caa7-9ab5-4abb-81e4-1b91b67d2683	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:22:48	 c94153c9-2028-4604-80d5-0ce216c1eb4b	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:22:50	 da77c39f-691e-485b-933b-c5a73f87aa44	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:23:45	 ee5956a8-78de-4ab3-a82e-7786bedcc716	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:23:46	 f34ee733-d098-467a-b20a-04c1db6c43dc	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:23:47	 f9adb4fc-188b-4127-952c-5ccfa6b2a1fb	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug25	20:24:31	 9aa4330b-c38a-4413-9bdd-a903c2f63a8b	 TypeError	 Cannot convert undefined or null to object	 POST	 /register	  undefined
+2023Aug26	15:27:28	 09b31bc4-34c7-4406-b0eb-d3f27cae4b6c	 TypeError	 Cannot read properties of undefined (reading 'username')	 POST	 /upload/prodile	  undefined
+2023Aug26	15:41:03	 4c0f391f-f6c3-489d-9dc9-62040840decb	 TypeError	 Cannot read properties of undefined (reading 'username')	 POST	 /upload.profile	  undefined
+2023Aug26	16:07:38	 2f16f9f1-c5b5-4de2-a922-357c3a63293a	 MulterError	 Unexpected field	 POST	 /upload	  undefined
+2023Aug26	16:07:42	 51348e74-4591-459a-99b5-67c2d6404410	 MulterError	 Unexpected field	 POST	 /upload	  undefined
+2023Aug26	16:24:19	 3e32f0ea-1566-4c36-bb8b-1a7e0d135929	 Error	 ENOENT: no such file or directory, open 'C:\Users\tsc\Desktop\MERN\SocialApp\usersDetails\64e9fce8c48f326aed71ef27\profile\USA.png'	 POST	 /upload	  undefined
+2023Aug26	16:24:23	 2ad4258d-810a-45d7-a569-04ddc73e45e4	 Error	 ENOENT: no such file or directory, open 'C:\Users\tsc\Desktop\MERN\SocialApp\usersDetails\64e9fce8c48f326aed71ef27\profile\USA.png'	 POST	 /upload	  undefined
+2023Aug26	17:19:31	 0431d461-db82-455a-a304-2c8cd33e5d1b	 MulterError	 Unexpected field	 POST	 /upload	  undefined
+2023Aug27	20:05:37	 babe8c6b-78d9-49af-98d1-0445f753a60f	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /register	  http://localhost:5173
+2023Aug27	20:08:13	 063f8639-5688-4fe4-9e52-a1b774e9c673	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /register	  http://localhost:5173
+2023Aug27	20:08:41	 e5edeb0b-c0ca-449e-ae7c-7e3bd20cde17	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /register	  http://localhost:5173
+2023Aug27	20:09:28	 e596c972-d1df-4fbb-9642-d3e1a8513204	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /register	  http://localhost:5173
+2023Aug27	20:09:32	 7eb4485e-0ffc-43dd-8066-f461d2914f47	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /register	  http://localhost:5173
+2023Aug31	12:55:04	 68ff7f13-ebd3-494c-8323-4fa32d237cd7	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /login	  http://localhost:5173
+2023Sep09	19:06:26	 a6e21cb4-8487-4ae6-93f4-4f9811fc1281	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /login	  http://localhost:5174
+2023Sep09	19:07:23	 056956b6-3d40-4d32-89ff-429202d85fa1	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /login	  http://localhost:5174
+2023Sep09	19:07:33	 a42f2862-90cb-4130-ada9-de64078b426f	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /login	  http://localhost:5174
+2023Sep09	19:08:32	 40e6ee78-6a7d-4a81-8869-9533f8077fb7	 Error	 CAN NOT ACCESS TO SERVER	 OPTIONS	 /login	  http://localhost:5174
+2023Sep09	21:11:51	 b47e6e28-2e74-43c4-9a7e-bc4e3dfc10e4	 Error	 ENOENT: no such file or directory, open 'C:\Users\tsc\Desktop\MERN\SocialApp\usersDetails\profile\USA.png'	 POST	 /uploadposts	  http://localhost:5173
+2023Sep10	11:10:36	 343be38b-b66f-48df-b58b-4bdde179f6b7	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:12:11	 1e38b45e-85eb-42d7-9f79-5a182f0c7a75	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:12:46	 42b54365-9ad0-4e35-ad4f-2d5e3df253c4	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:14:22	 8c4e74c9-9cd0-4b00-a1a1-b7fd812a933e	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:14:49	 32a7d134-4c23-4575-b433-082bd0109488	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:15:22	 9616e7f4-c3ea-4b2b-963e-c1d3513e5661	 Error	 Cannot set headers after they are sent to the client	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:53:03	 b64fcd9a-7199-472c-bb48-9575f5b378ef	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:53:18	 0f99d6f4-4229-45ff-8acf-6891540fe329	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:53:27	 905fac89-43e7-4a9f-882d-acb7f80ac38a	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:55:14	 a111f6fc-abb5-4af0-8f2d-17c9a463f281	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:55:42	 69019c5e-fb92-4d8c-be2d-9fa03e855c6f	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	11:56:34	 389c98b5-8175-4d6a-b562-93a16a9e5483	 Error	 Multipart: Boundary not found	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:17:35	 06a58d5d-3fee-4da0-a88a-4203e6ddb870	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:17:55	 ba9d4c5e-b1c1-4e0a-9eba-cbcbe5c593ef	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:18:05	 1ca58ff0-f2cc-4c4a-9ec5-90d8628770b9	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:18:30	 d9a4c12c-b776-47fb-9d03-418adbfc4321	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:19:20	 e50df8df-2dc0-4b92-9f77-839318eec1f1	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:22:25	 43b0cbb9-d84b-4a68-af2b-0226d79b0776	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /posts/create	  http://localhost:5173
+2023Sep10	12:38:33	 8c8f8a5c-4945-4ddb-964c-c622a2c10410	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:42:01	 5fc232d2-e69d-422a-808c-440355d2f2d6	 TypeError	 Cannot read properties of undefined (reading 'mimetype')	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:51:41	 37303b4a-1999-4eb9-9319-b18cc71d3fd5	 Error	 Invalid file type. Only image files (jpeg, png, gif) are allowed.	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:53:07	 41e1598c-64c0-45e7-9c80-97baec77024d	 ReferenceError	 file is not defined	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:55:05	 4edb047f-f9fc-4a20-b242-1618c51c0319	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:56:25	 bcff9d40-d96c-4fe2-8701-c4f68d9400c4	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	12:58:44	 2af33b99-b2cd-4f7f-b60b-b6f449acaf21	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	13:00:53	 cfdb4f5d-10ab-4f07-bf70-db2f0fab1d79	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	13:01:27	 37beb2ea-b0a1-4a85-948c-9609af2e6535	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	13:02:30	 cbbbec6d-af93-468f-a0ec-b745cee0d3fa	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	13:03:12	 f1b443e8-5cc6-455f-aea0-940012d869be	 MulterError	 File too large	 POST	 /upload/profile	  http://localhost:5173
+2023Sep10	17:57:20	 d52f47e5-8df0-4118-be6f-f20d9987f8e0	 MulterError	 File too large	 POST	 /posts/create	  http://localhost:5173

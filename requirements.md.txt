@@ -1,0 +1,59 @@
+// Pages // 
+[] Home Authentication and Authorization
+[] Registration page 
+[] Login page
+[] Home Page [Sidebar , content ,friends]
+[] Profile Page [friends , content of user]
+[] Settings
+[] chat page
+[] Home page for not user
+
+
+// Stories // 
+[] user must be registration
+[] user must be Authentication
+[] user can set profile photo and must name and password and username
+[] user can add content like video and photo
+[] user can show anther content of user  how in friend in
+[] user can set like and comment 
+[] user can mange friend like add and remove  maybe block
+[] user can chatting with another  friends
+[] user can change his profile
+[] user can set notification like message and like post and comment and add friends
+[] user can search of friends and and content 
+[] user can see other profiles
+
+
+// public 
+[] registration
+[] login
+[] Authentication page
+[] home page for user 
+
+// protected //
+[] chat
+[] profile
+[] notification
+[] like and comment
+[] search
+[] settings
+[] other profiles from users
+
+
+// functionalists //
+Backend: Nodejs / Express / MongooseDB  
+FrontEnd : ReactJS / Global Context Store  / TS
+Helpers : JWT , rate-limiter , SASS , Axios / Socket.IO
+
+
+
+
+
+
+
+
+
+
+
+
+

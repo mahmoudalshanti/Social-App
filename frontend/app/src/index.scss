@@ -1,0 +1,1180 @@
+// fonts
+@font-face {
+  font-family: mainRegular;
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: mainMedium;
+  src: url("./fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: mainBold;
+  src: url("./fonts/Montserrat-Bold.ttf");
+}
+//
+
+// Screen responsive
+@mixin screen($var) {
+  @if $var == "small" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $var == "medium" {
+    @media (max-width: 991px) and (min-width: 768px) {
+      @content;
+    }
+  } @else if $var == "large" {
+    @media (max-width: 1115px) and (min-width: 992px) {
+      @content;
+    }
+  } @else if $var == "max" {
+    @media (min-width: 1116) {
+      @content;
+    }
+  }
+}
+
+// keyFrames With the prefix
+@mixin keyFrame($anamation-name) {
+  @-webkit-keyframes #{$anamation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$anamation-name} {
+    @content;
+  }
+  @keyframes #{$anamation-name} {
+    @content;
+  }
+}
+
+// mixin for button
+@mixin button($width, $padding, $bgColor) {
+  display: block;
+  margin: 15px auto;
+  padding: $padding;
+  border-radius: 17px;
+  outline: none;
+  width: $width;
+  border: none;
+  font-size: 1.2rem;
+  background-color: $bgColor;
+  cursor: pointer;
+}
+
+// the media responsive bootsrap
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+
+//mains color
+$mainDarkColor: #040303;
+$secDarkColor: #352f44;
+$lightColor: #f5f5f5;
+
+// fonts
+
+// main  layout
+$var100: 100px;
+
+button.upload {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-family: mainRegular;
+  padding: 7px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: rgb(29, 155, 240);
+  color: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $mainDarkColor;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (min-width: $small) {
+    & {
+      width: 750px;
+    }
+  }
+  @media (min-width: $medium) {
+    & {
+      width: 970px;
+    }
+  }
+  @media (min-width: $large) {
+    & {
+      width: 1170px;
+    }
+  }
+}
+
+.msg {
+  background-color: #950101;
+  width: fit-content;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.success {
+  background-color: #4e9f3d !important;
+}
+.auth-logo {
+  font-size: 15rem;
+  font-family: mainBold;
+  @include screen("small") {
+    font-size: 7rem;
+  }
+}
+
+.auth-button {
+  @include button(350px, 7px, #fff);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  font-family: mainMedium;
+  color: #000;
+  text-align: center;
+
+  @include screen("small") {
+    width: 350px;
+    margin: 15px 0;
+  }
+}
+.sign-button {
+  @include button(250px, 10px, transparent);
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  color: rgb(29, 155, 240);
+  font-family: mainBold;
+  text-align: center;
+}
+
+.sign-button::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(192, 192, 192, 0.445);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 17px;
+  z-index: -1;
+}
+
+.sign-button::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(29, 155, 240);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.sign-button:hover::after {
+  opacity: 1;
+}
+.sign-button:hover {
+  color: #fff;
+}
+
+svg {
+  width: 20px;
+  margin-right: 10px;
+}
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main-auth {
+  background-color: $mainDarkColor;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  overflow: hidden;
+
+  & {
+    @include screen("small") {
+      flex-direction: column;
+    }
+  }
+  > {
+    .buttons {
+      padding: 10px;
+      > p {
+        font-size: 3rem;
+        font-family: mainBold;
+        margin-bottom: 50px;
+      }
+
+      .btns {
+        > p {
+          font-size: 1.3rem;
+          font-family: mainRegular;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  @include screen("small") {
+    > {
+      .buttons {
+        padding: 10px;
+        > p {
+          font-size: 2rem;
+          font-family: mainBold;
+          margin-bottom: 50px;
+        }
+
+        .btns {
+          > p {
+            font-size: 1rem;
+            font-family: mainRegular;
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+  }
+}
+// end main layout
+
+body {
+  overflow-x: hidden;
+}
+// start signup
+
+.signup {
+  height: 100vh;
+  background-color: $secDarkColor;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  section {
+    width: 50%;
+    background-color: $mainDarkColor;
+    z-index: 2;
+    > h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-family: mainMedium;
+      padding: 10px 0;
+    }
+    @include screen("small") {
+      width: 90%;
+    }
+    > article {
+      padding: 20px;
+      text-align: center;
+      > p {
+        text-align: start;
+      }
+      > div {
+        margin: 30px 0;
+
+        > div {
+          display: flex;
+          align-items: center;
+          border: 1px solid #ccc;
+          height: 40px;
+          @include screen("small") {
+            height: 30px;
+          }
+        }
+
+        input {
+          color: #fff;
+          background-color: transparent;
+          outline: none;
+          width: 90%;
+          border: none;
+          font-family: mainRegular;
+          font-size: 1rem;
+        }
+        .wrn {
+          margin-top: 10px;
+          text-align: start;
+          font-family: mainRegular;
+          text-transform: uppercase;
+          color: rgb(221, 0, 0);
+          font-size: 0.8rem;
+          @include screen(("small")) {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      .hide {
+        display: block;
+        height: 100%;
+        text-align: center;
+        width: 50px;
+        font-family: mainMedium;
+        background-color: rgb(29, 155, 240);
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &::after {
+    content: "@";
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    color: #7777779d;
+    z-index: 1;
+    @include screen(("small")) {
+      left: 100px;
+    }
+    @include screen(("medium")) {
+      left: 50px;
+    }
+    z-index: 1;
+  }
+  &::before {
+    content: "@";
+    position: absolute;
+    right: -100px;
+    top: 30%;
+    transform: translate(-50%, -50%) rotate(40deg);
+    font-size: 20rem;
+    color: #cccccc9d;
+    z-index: 1;
+    @include screen(("small")) {
+      right: -200px;
+    }
+
+    @include screen(("medium")) {
+      right: -250px;
+    }
+  }
+
+  .congrats {
+    font-family: mainBold;
+    font-size: 1.3rem;
+    color: rgb(29, 155, 240);
+    line-height: 2;
+    > .u {
+      cursor: pointer;
+      font-family: mainMedium;
+      color: rgb(29, 155, 240);
+      text-decoration: underline;
+    }
+  }
+
+  .correct {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4d9f3d69;
+    width: 200px;
+    font-size: 20rem;
+  }
+}
+
+.google-btns {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 17px;
+  @include screen("small") {
+    display: flex;
+    justify-content: start;
+    margin: 15px 0;
+  }
+}
+
+.upload {
+  h3 {
+    font-family: mainMedium;
+    text-align: center;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border-radius: 50%;
+    > img {
+      width: 100%;
+    }
+  }
+  input {
+    font-size: 1rem;
+    font-family: mainMedium;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+}
+
+//end sign up
+
+// start sign in
+
+.logo-signin {
+  color: $secDarkColor;
+  font-size: 12rem;
+  font-family: mainBold;
+  margin: 0 auto;
+  text-align: center;
+}
+.signin {
+  overflow: hidden;
+  background-color: $mainDarkColor;
+
+  > section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .inp {
+    margin: 0 auto;
+    width: 50%;
+    @include screen("small") {
+      width: 90%;
+    }
+    > div {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 100%;
+      > div {
+        display: flex;
+        border: 1px solid $secDarkColor;
+        height: 50px;
+        color: #fff;
+        padding: 10px;
+        align-items: center;
+        > input {
+          width: 100%;
+          outline: none;
+          height: 100%;
+          border: none;
+          font-family: mainRegular;
+          font-size: 1.1rem;
+          background-color: transparent;
+          color: #fff;
+        }
+      }
+      .hide {
+        height: 100%;
+        display: block;
+        font-family: mainRegular;
+        background-color: rgb(29, 155, 240);
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  .info {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    @include screen("small") {
+      width: 90%;
+    }
+    .msg {
+      width: 100%;
+    }
+  }
+}
+// end from sign in
+// start Navbar
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: $secDarkColor;
+  border-bottom: 1px solid #ccc;
+  @include screen("small") {
+    justify-content: center;
+  }
+  .logo {
+    flex-basis: 5%;
+    cursor: pointer;
+    .logo-navbar {
+      font-size: 4rem;
+      font-family: mainBold;
+      color: $lightColor;
+    }
+    @include screen("small") {
+      margin-right: 20px;
+    }
+  }
+
+  .search {
+    background-color: blue;
+    flex-basis: 60%;
+    height: 40px;
+    position: relative;
+    .searchBox {
+      position: absolute;
+      width: 100%;
+      top: 102%;
+      height: fit-content;
+      background-color: #fff;
+      > .box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        > div {
+          width: 60px;
+          height: 60px;
+          > img {
+            width: 100%;
+          }
+        }
+        > p {
+          font-family: mainRegular;
+          margin-left: 10px;
+        }
+      }
+    }
+    > input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: 1px solid $lightColor;
+      padding: 5px;
+      font-family: mainRegular;
+      font-size: 1.1rem;
+    }
+  }
+
+  .theSide {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    justify-content: flex-end;
+    cursor: pointer;
+    overflow: hidden;
+    p {
+      font-size: 0.9rem;
+      font-family: mainRegular;
+      color: $lightColor;
+      margin-left: 10px;
+    }
+    .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// start Content
+
+.ExpContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: $mainDarkColor;
+  color: $lightColor;
+  .aside {
+    background-color: $secDarkColor;
+    flex-basis: 20%;
+    height: calc(100vh - 97.78px);
+    @include screen(("small")) {
+      height: fit-content;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    > div {
+      width: fit-content;
+      margin: 20px auto;
+      > p {
+        font-family: mainMedium;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+      > .re {
+        font-size: 0.9rem;
+        display: block;
+        margin-top: 10px;
+        font-family: mainRegular;
+        cursor: pointer;
+        color: $lightColor;
+      }
+    }
+  }
+  .published {
+    .wrrPost {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-family: mainBold;
+      color: $lightColor;
+      text-shadow: 1px 1px red;
+    }
+    padding: 5px 20px;
+    background-color: $secDarkColor;
+    flex-basis: 77%;
+    height: 100%;
+    @include screen(("small")) {
+      height: 100%;
+      flex-basis: 100%;
+    }
+
+    > .addPost {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      > .imgAuthor {
+        flex-basis: 7%;
+        border-radius: 50%;
+        > img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      > .addContent {
+        flex-basis: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .inMind {
+          flex-basis: 100%;
+          height: 30px;
+          margin-bottom: 7px;
+          > input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-family: mainMedium;
+            font-size: 1.1rem;
+          }
+          ::placeholder {
+            font-family: mainBold;
+          }
+        }
+        .addImage {
+          width: fit-content;
+          margin-top: 20px;
+          width: 30px;
+          height: 30px;
+          .icon {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            color: rgb(12, 211, 12);
+          }
+        }
+
+        button {
+          padding: 3px 20px;
+          cursor: pointer;
+          font-family: mainMedium;
+          background-color: #950101;
+          color: $lightColor;
+        }
+      }
+    }
+  }
+  .contentPublished {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #3a3a3abd;
+    padding: 20px;
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      box-shadow: 1px 1px 10px 0px #000;
+      padding: 20px;
+      margin-bottom: 30px;
+      height: 350px;
+      cursor: pointer;
+      .upper {
+        display: flex;
+        align-items: center;
+        p {
+          font-family: mainMedium;
+          font-size: 1.1rem;
+          margin-left: 10px;
+          text-transform: lowercase;
+        }
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+      }
+      .lower {
+        margin-top: 10px;
+        p {
+          font-size: 1.3rem;
+          font-family: mainRegular;
+          margin-bottom: 5px;
+        }
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+// end content
+
+// start profile
+
+.profile {
+  background-color: $mainDarkColor;
+
+  section {
+    padding: 20px;
+  }
+  > .imgName {
+    .img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-bottom: 50px;
+      > img {
+        width: 250px;
+        height: 250px;
+
+        border-radius: 50%;
+      }
+    }
+    > p {
+      color: $lightColor;
+      font-family: mainBold;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+  }
+  .info {
+    > .friends {
+      > p {
+        color: $lightColor;
+        font-family: mainBold;
+        font-size: 1.2rem;
+      }
+
+      > .boxFriend {
+        padding: 20px;
+        display: flex;
+        > .box {
+          width: 150px;
+          height: 150px;
+          margin-left: 20px;
+          cursor: pointer;
+          > p {
+            color: $lightColor;
+            font-family: mainMedium;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+          }
+          > div {
+            width: 100%;
+            > img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.errorFriend {
+  color: $lightColor;
+  font-family: mainBold;
+}
+
+.postFriend {
+  padding: 20px;
+  color: #fff;
+  .userPost {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 10px;
+      font-family: mainMedium;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  .infoPost {
+    margin-top: 70px;
+    box-shadow: 1px 1px 10px 0px #352f44;
+    padding: 20px;
+    width: fit-content;
+    p {
+      font-family: mainRegular;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  input {
+    padding: 5px;
+    margin-right: 20px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-family: mainMedium;
+  }
+  button {
+    padding: 5px 20px;
+    font-family: mainMedium;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .box {
+    background-color: #6b6b6b;
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-top: 50px;
+    > div {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      p {
+        font-family: mainMedium;
+        margin-left: 10px;
+      }
+    }
+    > p {
+      margin-top: 10px;
+      font-family: mainRegular;
+      margin-left: 50px;
+    }
+  }
+}
+
+.userPosts {
+  padding: 20px;
+  .posts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: $lightColor;
+    font-family: mainBold;
+    margin-bottom: 40px;
+  }
+  .box {
+    box-shadow: 1px 1px 10px 0px $secDarkColor;
+    padding: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+    p {
+      color: $lightColor;
+      font-size: 1.2rem;
+      font-family: mainMedium;
+      margin-bottom: 20px;
+    }
+    > img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .DeletePost {
+    padding: 5px 20px;
+    font-family: mainMedium;
+    margin-top: 10px;
+  }
+}
+
+.messenger {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+  height: calc(100vh - 97.78px);
+  .aside {
+    flex-basis: 20%;
+    .box {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+      p {
+        font-family: mainMedium;
+        color: rgb(29, 155, 240);
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        margin-left: 10px;
+      }
+    }
+  }
+  .content {
+    flex-basis: 80%;
+  }
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message {
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: start;
+  margin-bottom: 30px;
+  width: fit-content;
+  max-width: 25%;
+  color: $lightColor;
+  word-break: break-all;
+  &.user {
+    background-color: blue;
+  }
+
+  &.receive {
+    height: fit-content;
+    text-align: start;
+    margin: 30px 0 0 auto;
+
+    .box {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: start;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      p {
+        background-color: brown;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+
+  input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}
+
+.noChat {
+  border: 1px solid $lightColor;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $lightColor;
+  font-size: 2rem;
+  font-family: mainBold;
+}
+
+.typeChat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  p {
+    color: $lightColor;
+    font-family: mainMedium;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+}
+
+.chat-container {
+  height: 600px;
+}
+
+.chat-messages {
+  overflow-y: scroll;
+  padding: 10px;
+  max-height: 100%;
+}
